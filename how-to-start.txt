@@ -1,0 +1,13 @@
+1. создать папку с проектом и перейти в нее
+2. npm init -y
+3. npm install --save-dev webpack webpack-cli
+4. создать webpack.config.js и записать в него настройки
+      const path = require('path');
+
+      module.exports = {
+      entry: './src/index.js',
+      output: {
+         path: path.resolve(__dirname, 'dist'),
+         filename: 'bundle.js',
+      },
+      };
